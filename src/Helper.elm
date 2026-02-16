@@ -1,7 +1,7 @@
 module Helper exposing (..)
-module Main exposing (..)
 
 import Html exposing (Html, div, h1, li, text, ul)
+
 
 
 -- =========================
@@ -75,6 +75,7 @@ onlyStudents userList =
         (\user ->
             if user.uType == "Student" then
                 user.name
+
             else
                 ""
         )
@@ -154,4 +155,3 @@ main =
                 ]
             ]
         ]
-
